@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Gaslight Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Let's calculate how much you're gonna owe me to gaslight you.</p>
+
+<form id="gaslightForm">
+    <label for="hours">Number of Hours:</label>
+    <input type="number" id="hours" min="1">
+    <br>
+    <label for="hourlyRate">Hourly Rate:</label>
+    <input type="text" id="hourlyRate" value="$100" readonly>
+    <br>
+    <button type="button" id="calculateBtn">Calculate Total</button>
+    <br>
+    <label for="total">Total:</label>
+    <input type="text" id="total" readonly>
+</form>
